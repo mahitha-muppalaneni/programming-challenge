@@ -1,0 +1,15 @@
+M=int(input("No of rows:"))
+N=int(input("No of columns:"))
+a=[]
+for i in range(0,M):
+    temp=[]
+    for j in range(0,N):
+        temp.append(int(input("Enter element by row and column: ")))
+    a.append(temp)
+print(a)    
+R=int(input("number to search: "))
+count=[]
+for i in a:
+    count.append(i.count(R))
+print(sum(count)) 
+ 
