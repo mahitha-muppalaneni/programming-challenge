@@ -1,0 +1,28 @@
+#include <stdio.h>
+ 
+int main()
+{
+   int M, N, c, d,a[][],count,R;
+ 
+   printf("Enter the number of rows and columns of matrix\n");
+   scanf("%d%d", &M, &N);
+   printf("Enter the elements of matrix\n");
+ 
+   for (c = 0; c < M; c++)
+      for (d = 0; d < N; d++)
+         scanf("%d", &a[c][d]);
+   printf("Enter number to find Occurrence: ");
+   scanf("%d",&R);
+   count=0;
+   for(c=0;c<M;c++)
+   {
+    for(d=0;d<N;d++)
+    {
+        if(a[c][d]==R)
+            count++;
+    }
+    printf("Occurrence of %d is: %d\n",R,count);
+    return 0;
+}
+ 
+  
